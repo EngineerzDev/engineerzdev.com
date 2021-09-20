@@ -238,7 +238,7 @@ body::-webkit-scrollbar {
 }
 
 #left {
-    background: url(../res/chevron-left-color.svg);
+    background: url(./res/chevron-left-color.svg);
     background-repeat: no-repeat;
     background-position: right;
     float:left;
@@ -250,7 +250,7 @@ body::-webkit-scrollbar {
 }
 
 #right {
-    background: url(../res/chevron-right-color.svg);
+    background: url(./res/chevron-right-color.svg);
     background-repeat: no-repeat;
     background-position: left;
     float:right;
