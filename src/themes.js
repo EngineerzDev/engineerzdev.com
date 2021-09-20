@@ -19,6 +19,8 @@ function changetheme() {
         dsc.src = "../res/discordlogocolor.svg"
         leftBtn.style.background = "url(../res/chevron-left-color.svg)"
         rightBtn.style.background = "url(../res/chevron-right-color.svg)"
+        leftBtn.style.backgroundRepeat = "no-repeat"
+        rightBtn.style.backgroundRepeat = "no-repeat"
     }
     else {
         theme.href = "index-light.css"
