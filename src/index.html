@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>engineerzdev.com</title>
+        <link rel="stylesheet" href="index-dark.css"id="theme">
+        <link rel="icon" href="../res/engineerzdev.icon.svg" id="webicon">
+        <meta name="viewport" content="initial-scale=1.0 , minimum-scale=1.0 , maximum-scale=1.0" />
+    </head>
+    <body>
+        <div class="main">
+            <div class="topBar">
+                <div class="toggle">
+                    <input type="checkbox" class="themeswitch" id="themeswitch" onclick="changetheme()">
+                    <div class="indicator"></div>
+                </div>
+                <img src="../res/engineerzdev.comlogocolor.svg" class="logo" id="logo">
+                <div class="space"></div>
+                <div class="contacts">
+                    <div class="contact">
+                        <img src="../res/githubiconcolor.svg" class="contact-image" id="git">
+                        <a href="https://github.com/engineerzdev" class="contact-link"><span>github.com/EngineerzDev</span></a>
+                    </div>
+                    <div class="contact">
+                        <img src="../res/steamlogocolor.svg" class="contact-image" id="stm">
+                        <a href="https://steamcommunity.com/id/Engineeringzone/" class="contact-link"><span>steamcommunity.com/Engineeringzone</span></a>
+                    </div>
+                    <div class="contact">
+                        <img src="../res/discordlogocolor.svg" class="contact-image" id="dsc">
+                        <a class="contact-link"><span>Engineerz#3276</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="space2"></div>
+        <div class="mywork">
+            <img src="../res/myworkcolor.svg" class="mywork-image" id="mywork">
+            <div class="space2"></div>
+           <div class="slider">
+               <button type="button" name="left" id="left" onclick="left()"></button>
+               <button type="button" name="right" id="right" onclick="right()"></button>
+
+               <div class="slides">
+                    <div class="overflow">
+                        <div class="inner" id="inner">
+                            <div class="slide slide-1">
+                                <div class="slide-content">
+                                    <img class="slide-img" src="../res/led-controller.png">
+                                    <div class="slide-text">
+                                        <h3>LED Controller</h3>
+                                        <p>
+                                            LED Controller is a simple Electron.js aplication designed to communicate and control my overpriced Arduino controlled LEDs.
+                                            <br>
+                                            <br>
+                                            Code for both Arduino and Client avaliable at the Github Page.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide-2">
+                                <div class="slide-content">
+                                    <img class="slide-img" src="../res/emb2.png">
+                                    <div class="slide-text">
+                                        <h3>Elevator Music Bot</h3>
+                                        <p>
+                                            Elevator Music Bot is a Discord.js bot made to stream music into a voice channel.
+                                            <br>
+                                            <br>
+                                            First version used to use YouTube as the primary service, but due to recent events, we will be forced to use a different audio service provider.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="bullets">
+                    <input type="radio" class="slider" name="slider" id="slide-1" checked disabled>
+                    <input type="radio" class="slider" name="slider" id="slide-2" disabled>
+               </div>
+           </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="space2"></div>
+        <div class="footer" id="footer">
+            <span class="copyright" id="copyright">&#169 EngineerzDev 2021. All rights reserved.</span>
+            <button type="button" class="dimissBtn" id="dimissBtn" onclick="dimissBtn()">✕</button>
+        </div>
+    </body>
+    <script src="themes.js"></script>
+    <script src="index.js"></script>
+</html>
